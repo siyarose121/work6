@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap 5 project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imageboots.ico">
+    <style>
+        *{
+    font-family: montserrat;
+}
+body{
+    background:f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index:2;
+}
+.carousel-caption h5{
+    color: black;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    color:black;
+    width: 60%;
+    margin:auto ;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.navbar-light a{
+    color:black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light.navbar-light.navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+
+.services .card-body i{
+    font-size: 50px;
+}
+ .team.card.body i{
+    font-size: 20px;
+ }
+ .portfolio.card {
+    box-shadow:15px 15px 40px rgba(0,0,0,0.15);
+ }
+ .team.card {
+    box-shadow:15px 15px 40px rgba(0,0,0,0.15);
+ }
+@media only screen and (min-width:768px) and(max-width:991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:767px){
+    .navbar.nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom:125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-sucess">GREEN</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-6 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                    
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+       
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="green.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5><strong>Lorem ipsum</strong></h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                         placeat? Illo impedit suscipit cupiditate sed soluta illum libero
+                          repellat alias iure sunt necessitatibus voluptatibus, veniam nihil 
+                          quidem quisquam doloribus. Unde.</p>
+                    <P><a href="#" class="btn btn-success">Read more</a></P>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="wall1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h5> <strong>Dolor sitema</strong></h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                         recusandae. Architecto asperiores ullam, odio at voluptates
+                          laborum tempore autem veritatis et rerum vel quos iure a. Ipsa quae quod neque.</p>
+                    <p><a href="#" class="btn btn-success">Read more</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="wall9.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h5><strong>sed ut perspiciatis</strong></h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                         Itaque molestiae odio quasi quos? Adipisci unde, voluptate
+                          harum recusandae itaque inventore placeat tempore amet eos 
+                          culpa necessitatibus, sit quasi aliquid repellendus!</p>
+                    <p><a href="#" class="btn btn-success">Read more</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card  text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="grn1.png" alt="" class="img-fluid" width="50px" height="50px">
+                            </div>
+                            <h3 class="card-title"> <strong>Lorem ipsum</strong></h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sunt dignissimos officiis aliquam repellendus ullam dolorem! Adipisci reprehenderit minus veniam vero deleniti fugit iste modi debitis, rerum ea quae tenetur!</p>
+        
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card  text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="grn2.png" alt="" class="img-fluid" width="50px" height="50px">
+                            </div>
+                            <h3 class="card-title"> <strong>Dolor sitema</strong> </h3>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, accusantium enim eaque nemo aperiam, libero consequatur amet, delectus assumenda dolore veritatis veniam? Doloribus ipsam iste, illum libero recusandae itaque rerum!</p>
+    
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card  text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="grn3.png" alt="" class="img-fluid" width="50px" height="50px">
+                            </div>
+                            <h3 class="card-title"><strong>sed ut perspiciatis</strong></h3>
+                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat soluta omnis a cum, ut distinctio fugiat atque accusamus suscipit accusantium, eius consequuntur odit ratione nesciunt saepe reprehenderit ex sapiente sit?</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+
+</body>
+
+</html>
